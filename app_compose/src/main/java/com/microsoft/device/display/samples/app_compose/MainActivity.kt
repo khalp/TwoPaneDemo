@@ -21,7 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.microsoft.device.display.samples.app_compose.ui.theme.Blue
 import com.microsoft.device.display.samples.app_compose.ui.theme.ExampleTheme
-import com.microsoft.device.display.samples.app_compose.ui.theme.Gray
+import com.microsoft.device.display.samples.app_compose.ui.theme.Red
 import com.microsoft.device.dualscreen.twopanelayout.TwoPaneLayout
 
 val BackgroundColorKey = SemanticsPropertyKey<Color>("BackgroundColorKey")
@@ -71,7 +71,7 @@ fun Pane1(backgroundColor: Color = Blue) {
 }
 
 @Composable
-fun Pane2(backgroundColor: Color = Gray) {
+fun Pane2(backgroundColor: Color = Red) {
     Text(
         modifier = Modifier
             .fillMaxSize()

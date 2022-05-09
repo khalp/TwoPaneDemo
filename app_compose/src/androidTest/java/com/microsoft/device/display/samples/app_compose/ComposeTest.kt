@@ -12,7 +12,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
 import com.microsoft.device.display.samples.app_compose.ui.theme.Blue
 import com.microsoft.device.display.samples.app_compose.ui.theme.ExampleTheme
-import com.microsoft.device.display.samples.app_compose.ui.theme.Gray
+import com.microsoft.device.display.samples.app_compose.ui.theme.Red
 import com.microsoft.device.dualscreen.testing.compose.getString
 import com.microsoft.device.dualscreen.testing.compose.simulateHorizontalFoldingFeature
 import com.microsoft.device.dualscreen.testing.createWindowLayoutInfoPublisherRule
@@ -119,7 +119,7 @@ class ExampleInstrumentedTest {
         publisherRule.simulateHorizontalFoldingFeature(composeTestRule)
 
         composeTestRule.onNodeWithText("pane 1").assertBackgroundColorEquals(Blue)
-        composeTestRule.onNodeWithText("pane 2").assertBackgroundColorEquals(Gray)
+        composeTestRule.onNodeWithText("pane 2").assertBackgroundColorEquals(Red)
     }
 
     private fun SemanticsNodeInteraction.assertBackgroundColorEquals(backgroundColor: Color) =
